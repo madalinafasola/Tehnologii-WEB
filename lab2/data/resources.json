@@ -1,0 +1,94 @@
+{
+  "resources": [
+    {
+      "id": 1,
+      "name": "Biblioteca Centrală",
+      "type": "biblioteca",
+      "location": "Corp A, Etaj 1",
+      "program": {
+        "luni_vineri": "08:00 - 20:00",
+        "sambata": "09:00 - 14:00",
+        "duminica": "Închis"
+      },
+      "description": "Biblioteca principală a campusului cu peste 50.000 de volume și săli de lectură moderne.",
+      "tags": ["studiu", "carti", "sala-lectura", "wifi", "liniste"],
+      "contact": "biblioteca@campus.ro",
+      "capacitate": 200
+    },
+    {
+      "id": 2,
+      "name": "Sala de Studiu 24/7",
+      "type": "biblioteca",
+      "location": "Corp B, Parter",
+      "program": {
+        "luni_vineri": "Non-stop",
+        "sambata": "Non-stop",
+        "duminica": "Non-stop"
+      },
+      "description": "Sală de studiu deschisă non-stop pentru studenți cu legitimație validă.",
+      "tags": ["studiu", "noapte", "wifi", "prize", "calculator"],
+      "contact": "studiu@campus.ro",
+      "capacitate": 50
+    },
+    {
+      "id": 3,
+      "name": "Cantina Principală",
+      "type": "cantina",
+      "location": "Corp C, Parter",
+      "program": {
+        "luni_vineri": "07:00 - 19:00",
+        "sambata": "09:00 - 15:00",
+        "duminica": "Închis"
+      },
+      "description": "Cantina principală oferă mese calde, bufet suedez și opțiuni vegetariene.",
+      "tags": ["mancare", "masa-calda", "vegetarian", "ieftin"],
+      "contact": "cantina@campus.ro",
+      "capacitate": 300
+    },
+    {
+      "id": 4,
+      "name": "Cafenea Campus",
+      "type": "cantina",
+      "location": "Corp A, Parter",
+      "program": {
+        "luni_vineri": "07:30 - 21:00",
+        "sambata": "09:00 - 18:00",
+        "duminica": "10:00 - 16:00"
+      },
+      "description": "Cafenea modernă cu băuturi calde, sandwichuri și prăjituri de casă.",
+      "tags": ["cafea", "snacks", "wifi", "relaxare"],
+      "contact": "cafenea@campus.ro",
+      "capacitate": 60
+    },
+    {
+      "id": 5,
+      "name": "Aula Magna",
+      "type": "eveniment",
+      "location": "Corp D, Etaj 2",
+      "program": {
+        "luni_vineri": "08:00 - 22:00",
+        "sambata": "09:00 - 20:00",
+        "duminica": "La cerere"
+      },
+      "description": "Sala festivă principală pentru conferințe, simpozioane și evenimente culturale.",
+      "tags": ["conferinta", "cultura", "eveniment", "prezentare"],
+      "contact": "aula@campus.ro",
+      "capacitate": 500
+    },
+    {
+      "id": 6,
+      "name": "Sala de Evenimente Studențești",
+      "type": "eveniment",
+      "location": "Corp E, Parter",
+      "program": {
+        "luni_vineri": "10:00 - 22:00",
+        "sambata": "10:00 - 22:00",
+        "duminica": "12:00 - 20:00"
+      },
+      "description": "Spațiu dedicat activităților studențești, cluburi și întâlniri informale.",
+      "tags": ["studenti", "club", "activitati", "socializare", "eveniment"],
+      "contact": "studenti@campus.ro",
+      "capacitate": 100
+    }
+  ]
+}

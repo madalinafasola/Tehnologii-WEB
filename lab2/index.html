@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Info Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Campus<span>Info</span>Hub</a>
+    <div class="nav-links">
+      <a href="index.html" class="activ">Acasă</a>
+      <a href="pages/library.html">Bibliotecă</a>
+      <a href="pages/cafeteria.html">Cantină</a>
+      <a href="pages/events.html">Evenimente</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Campus Info Hub</h1>
+    <p>Totul despre campusul tău într-un singur loc — bibliotecă, cantină și evenimente.</p>
+    <div class="hero-butoane">
+      <a href="#toate-resursele" class="buton buton-alb">Explorează resursele ↓</a>
+      <!-- URL absolut -->
+      <a href="https://www.google.com/maps" target="_blank" class="buton buton-contur">Harta campusului 🗺️</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- LINKURI RAPIDE -->
+    <section>
+      <h2 class="sectiune-titlu">Secțiuni <span>principale</span></h2>
+      <div class="grid-rapide">
+        <!-- URL relativ -->
+        <a href="pages/library.html" class="card-rapid">
+          <span class="icon">📚</span>
+          <h4>Bibliotecă</h4>
+          <p>Săli de lectură, colecții și program de acces</p>
+        </a>
+        <a href="pages/cafeteria.html" class="card-rapid">
+          <span class="icon">🍽️</span>
+          <h4>Cantină</h4>
+          <p>Meniu zilnic, orar și servicii alimentare</p>
+        </a>
+        <a href="pages/events.html" class="card-rapid">
+          <span class="icon">🎭</span>
+          <h4>Evenimente</h4>
+          <p>Conferințe, activități studențești și spații</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CLOUD TAGURI / CATEGORII -->
+    <section>
+      <h2 class="sectiune-titlu">Filtrează după <span>categorie</span></h2>
+      <div id="cloud-taguri"></div>
+    </section>
+
+    <!-- TOATE RESURSELE - incarcate din JSON cu fetch() -->
+    <section id="toate-resursele">
+      <h2 class="sectiune-titlu">Toate <span>resursele</span></h2>
+      <div id="lista-resurse" class="grid-resurse">
+        <p class="text-incarcare">Se încarcă resursele...</p>
+      </div>
+    </section>
+
+    <!-- FILTRATE: DOAR LOCURI DE STUDIU -->
+    <section>
+      <h2 class="sectiune-titlu">Locuri de <span>studiu</span></h2>
+        <p class="subtitlu-sectiune">
+           Vezi și: <a href="pages/library.html#schedule" class="link-detalii">Program detaliat bibliotecă →</a>
+        </p>
+      <div id="lista-studiu" class="grid-resurse">
+        <p class="text-incarcare">Se încarcă...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Campus Info Hub &nbsp;|&nbsp;
+      <a href="https://www.uab.ro/" target="_blank" rel="noopener">Universitatea "1 decembrie 1918"</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

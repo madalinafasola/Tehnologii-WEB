@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare – Laborator 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+<nav>
+    <ul>
+        <li><a href="index.html">🏠 Acasă</a></li>
+        <li><a href="preferences.html">⚙️ Preferințe</a></li>
+        <li><a href="cookies-info.html">🍪 Cookies Info</a></li>
+        <li><a href="login.html">🔐 Autentificare</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="page-header">
+        <h1>Înregistrare</h1>
+        <div class="subtitle">Creați un cont nou</div>
+    </div>
+
+    <div id="alertError" class="alert-error"></div>
+    <div id="alertSuccess" class="alert-success"></div>
+
+    <div class="card" style="max-width:420px">
+        <div class="form-group">
+            <label for="username">Username (minim 3 caractere)</label>
+            <input type="text" id="username" placeholder="ex: ion_popescu">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="ex: ion@email.com">
+        </div>
+        <div class="form-group">
+            <label for="password">Parolă (minim 6 caractere)</label>
+            <input type="password" id="password" placeholder="••••••••">
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirmare parolă</label>
+            <input type="password" id="confirmPassword" placeholder="••••••••">
+        </div>
+        <div style="display:flex;gap:1rem;margin-top:1.5rem">
+            <button class="btn btn-primary" onclick="doRegister()">✅ Înregistrează-te</button>
+            <a href="login.html" class="btn btn-outline">← Înapoi la login</a>
+        </div>
+    </div>
+</div>
+<script src="js/cookies.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

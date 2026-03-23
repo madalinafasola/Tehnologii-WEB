@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator MVC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+
+        <div class="display-container">
+            <div id="expression"></div>
+            <div id="display">0</div>
+        </div>
+
+        <div class="buttons">
+           <button data-value="C" class="btn-clear">C</button>
+           <button data-value="/" class="btn-operator">÷</button>
+           <button data-value="*" class="btn-operator">×</button>
+           <button data-value="-" class="btn-operator">−</button>
+
+           <button data-value="7">7</button>
+           <button data-value="8">8</button>
+           <button data-value="9">9</button>
+           <button data-value="+" class="btn-operator">+</button>
+
+           <button data-value="4">4</button>
+           <button data-value="5">5</button>
+           <button data-value="6">6</button>
+
+           <button data-value="1">1</button>
+           <button data-value="2">2</button>
+           <button data-value="3">3</button>
+           <button data-value="=" class="btn-equals">=</button>
+
+           <button data-value="0" class="btn-zero">0</button>
+           <button data-value=".">.</button>
+        </div>    
+    </div>
+
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="controller.js"></script>
+    <script>
+        window.addEventListener('load', function(){
+            Controller.init();
+        });
+    </script>
+</body>
+</html>
